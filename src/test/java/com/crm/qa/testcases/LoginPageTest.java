@@ -110,9 +110,9 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@AfterMethod
-//	public void tearDown(){		
-//	driver.quit();
-//	}
+	public void tearDown(){		
+	driver.quit();
+	}
 
 	private void takeScreenshotAtEndOfTest() {
 		// TODO Auto-generated method stub

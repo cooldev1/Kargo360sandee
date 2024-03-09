@@ -1,73 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-08T13:20:27Z" name="Default suite" finished-at="2024-03-08T13:21:11Z" duration-ms="43490">
+  <suite started-at="2024-03-09T22:30:09Z" name="Default suite" finished-at="2024-03-09T22:30:56Z" duration-ms="46882">
     <groups>
     </groups>
-    <test started-at="2024-03-08T13:20:27Z" name="Default test" finished-at="2024-03-08T13:21:11Z" duration-ms="43490">
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:27Z" name="setUp" finished-at="2024-03-08T18:50:37Z" duration-ms="9863" status="PASS">
+    <test started-at="2024-03-09T22:30:09Z" name="Default test" finished-at="2024-03-09T22:30:56Z" duration-ms="46882">
+      <class name="com.crm.qa.testcases.NewCartcreationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:09Z" name="setUp" finished-at="2024-03-10T04:00:13Z" duration-ms="4429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLogin()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:37Z" name="invalidLogin" finished-at="2024-03-08T18:50:41Z" duration-ms="3478" status="PASS">
+        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:13Z" name="verifyhomepage" finished-at="2024-03-10T04:00:15Z" duration-ms="2018" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="takeScreenshotAtEndOfTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:41Z" name="takeScreenshotAtEndOfTest" finished-at="2024-03-08T18:50:41Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotAtEndOfTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:41Z" name="setUp" finished-at="2024-03-08T18:50:44Z" duration-ms="3558" status="PASS">
+        </test-method> <!-- verifyhomepage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:15Z" name="setUp" finished-at="2024-03-10T04:00:19Z" duration-ms="3340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidUser()[pri:4, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:44Z" name="invalidUser" finished-at="2024-03-08T18:50:47Z" duration-ms="3238" status="PASS">
+        <test-method signature="verifyCartListingpage()[pri:2, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:19Z" name="verifyCartListingpage" finished-at="2024-03-10T04:00:25Z" duration-ms="6638" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidUser -->
-        <test-method is-config="true" signature="takeScreenshotAtEndOfTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:47Z" name="takeScreenshotAtEndOfTest" finished-at="2024-03-08T18:50:47Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotAtEndOfTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:47Z" name="setUp" finished-at="2024-03-08T18:50:50Z" duration-ms="3034" status="PASS">
+        </test-method> <!-- verifyCartListingpage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:25Z" name="setUp" finished-at="2024-03-10T04:00:29Z" duration-ms="3168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidPass()[pri:5, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:50Z" name="invalidPass" finished-at="2024-03-08T18:50:54Z" duration-ms="3243" status="PASS">
+        <test-method signature="ClickonNewCartButton()[pri:3, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:29Z" name="ClickonNewCartButton" finished-at="2024-03-10T04:00:36Z" duration-ms="7699" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidPass -->
-        <test-method is-config="true" signature="takeScreenshotAtEndOfTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:54Z" name="takeScreenshotAtEndOfTest" finished-at="2024-03-08T18:50:54Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotAtEndOfTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:54Z" name="setUp" finished-at="2024-03-08T18:50:57Z" duration-ms="3739" status="PASS">
+        </test-method> <!-- ClickonNewCartButton -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:36Z" name="setUp" finished-at="2024-03-10T04:00:42Z" duration-ms="5732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="noCredentials()[pri:6, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:50:57Z" name="noCredentials" finished-at="2024-03-08T18:51:01Z" duration-ms="3208" status="PASS">
+        <test-method signature="CartCreationPossitiveflow()[pri:4, instance:com.crm.qa.testcases.NewCartcreationPageTest@51549490]" started-at="2024-03-10T04:00:42Z" name="CartCreationPossitiveflow" finished-at="2024-03-10T04:00:56Z" duration-ms="13837" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- noCredentials -->
-        <test-method is-config="true" signature="takeScreenshotAtEndOfTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:51:01Z" name="takeScreenshotAtEndOfTest" finished-at="2024-03-08T18:51:01Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotAtEndOfTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:51:01Z" name="setUp" finished-at="2024-03-08T18:51:05Z" duration-ms="4799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:7, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:51:05Z" name="loginTest" finished-at="2024-03-08T18:51:11Z" duration-ms="5287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="takeScreenshotAtEndOfTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@4682eba5]" started-at="2024-03-08T18:51:11Z" name="takeScreenshotAtEndOfTest" finished-at="2024-03-08T18:51:11Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotAtEndOfTest -->
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+        </test-method> <!-- CartCreationPossitiveflow -->
+      </class> <!-- com.crm.qa.testcases.NewCartcreationPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
