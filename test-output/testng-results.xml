@@ -1,66 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-10T14:59:00Z" name="Default suite" finished-at="2024-03-10T14:59:38Z" duration-ms="37536">
+  <suite started-at="2024-03-10T15:46:07Z" name="Default suite" finished-at="2024-03-10T15:46:36Z" duration-ms="28392">
     <groups>
     </groups>
-    <test started-at="2024-03-10T14:59:00Z" name="Default test" finished-at="2024-03-10T14:59:38Z" duration-ms="37536">
-      <class name="com.crm.qa.testcases.NewCurrancycreationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:00Z" name="setUp" finished-at="2024-03-10T20:29:03Z" duration-ms="2368" status="PASS">
+    <test started-at="2024-03-10T15:46:07Z" name="Default test" finished-at="2024-03-10T15:46:36Z" duration-ms="28392">
+      <class name="com.crm.qa.testcases.NewFreightForwarderCreationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewFreightForwarderCreationPageTest@71e9ebae]" started-at="2024-03-10T21:16:07Z" name="setUp" finished-at="2024-03-10T21:16:10Z" duration-ms="2735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:03Z" name="verifyhomepage" finished-at="2024-03-10T20:29:06Z" duration-ms="3022" status="PASS">
+        <test-method signature="ClickonNewFreightForwarderButton()[pri:3, instance:com.crm.qa.testcases.NewFreightForwarderCreationPageTest@71e9ebae]" started-at="2024-03-10T21:16:10Z" name="ClickonNewFreightForwarderButton" finished-at="2024-03-10T21:16:20Z" duration-ms="9956" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:06Z" name="tearDown" finished-at="2024-03-10T20:29:06Z" duration-ms="315" status="PASS">
+        </test-method> <!-- ClickonNewFreightForwarderButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.NewFreightForwarderCreationPageTest@71e9ebae]" started-at="2024-03-10T21:16:20Z" name="tearDown" finished-at="2024-03-10T21:16:20Z" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:06Z" name="setUp" finished-at="2024-03-10T20:29:08Z" duration-ms="2059" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewFreightForwarderCreationPageTest@71e9ebae]" started-at="2024-03-10T21:16:20Z" name="setUp" finished-at="2024-03-10T21:16:22Z" duration-ms="2416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCurrancyListingpage()[pri:2, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:08Z" name="verifyCurrancyListingpage" finished-at="2024-03-10T20:29:15Z" duration-ms="6680" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCurrancyListingpage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:15Z" name="tearDown" finished-at="2024-03-10T20:29:15Z" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:15Z" name="setUp" finished-at="2024-03-10T20:29:17Z" duration-ms="2303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ClickonNewCurrancyButton()[pri:3, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:17Z" name="ClickonNewCurrancyButton" finished-at="2024-03-10T20:29:26Z" duration-ms="8857" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickonNewCurrancyButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:26Z" name="tearDown" finished-at="2024-03-10T20:29:26Z" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:26Z" name="setUp" finished-at="2024-03-10T20:29:28Z" duration-ms="1799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="CartCreationPossitiveflow()[pri:4, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:28Z" name="CartCreationPossitiveflow" finished-at="2024-03-10T20:29:38Z" duration-ms="9634" status="FAIL">
+        <test-method signature="FreightForwarderCreationPossitiveflow()[pri:4, instance:com.crm.qa.testcases.NewFreightForwarderCreationPageTest@71e9ebae]" started-at="2024-03-10T21:16:22Z" name="FreightForwarderCreationPossitiveflow" finished-at="2024-03-10T21:16:35Z" duration-ms="12929" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [https://qaspicexpress.kargo360tech.com/currency/list] but found [https://qaspicexpress.kargo360tech.com/currency/create]]]>
+              <![CDATA[expected [https://qaspicexpress.kargo360tech.com/freight-forwarder/list] but found [https://qaspicexpress.kargo360tech.com/freight-forwarder/create]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://qaspicexpress.kargo360tech.com/currency/list] but found [https://qaspicexpress.kargo360tech.com/currency/create]
+              <![CDATA[java.lang.AssertionError: expected [https://qaspicexpress.kargo360tech.com/freight-forwarder/list] but found [https://qaspicexpress.kargo360tech.com/freight-forwarder/create]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.crm.qa.testcases.NewCurrancycreationPageTest.CartCreationPossitiveflow(NewCurrancycreationPageTest.java:125)
+	at com.crm.qa.testcases.NewFreightForwarderCreationPageTest.FreightForwarderCreationPossitiveflow(NewFreightForwarderCreationPageTest.java:128)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,12 +67,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CartCreationPossitiveflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.NewCurrancycreationPageTest@36a5cabc]" started-at="2024-03-10T20:29:38Z" name="tearDown" finished-at="2024-03-10T20:29:38Z" duration-ms="180" status="PASS">
+        </test-method> <!-- FreightForwarderCreationPossitiveflow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.NewFreightForwarderCreationPageTest@71e9ebae]" started-at="2024-03-10T21:16:35Z" name="tearDown" finished-at="2024-03-10T21:16:36Z" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.NewCurrancycreationPageTest -->
+      </class> <!-- com.crm.qa.testcases.NewFreightForwarderCreationPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
