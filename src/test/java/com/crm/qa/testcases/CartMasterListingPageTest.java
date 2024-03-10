@@ -30,6 +30,7 @@ public class CartMasterListingPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	CartMasterListingPage Cartlistingpage;
 	NewCartcreationPageTest NewCartCreationPage;
 //	String sheetName = "contacts";
@@ -64,7 +65,7 @@ public class CartMasterListingPageTest extends TestBase{
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 	}
 		
 

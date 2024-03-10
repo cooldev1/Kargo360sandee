@@ -24,17 +24,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-public class NewCurrancycreationPageTest  extends TestBase {
+public class NewHSCodeCreationPageTest  extends TestBase {
 
 	
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
-	com.crm.qa.pages.NewCurrancyCreationPage NewCurrancyCreationPage;
-	com.crm.qa.pages.CurrencyMasterListingPage CurrencyMasterListingPage;
+	TestBase TestBase;
+	com.crm.qa.pages.NewHSCodeCreationPage NewHSCodeCreationPage;
+	com.crm.qa.pages.HSCodeMasterListingPage HSCodeMasterListingPage;
 	
-	public NewCurrancycreationPageTest(){
+	//com.crm.qa.pages.NewFreightFowarderCreationPage NewFreightFowarderCreationPage;
+	//com.crm.qa.pages.FreightForwarderMasterListingPage FreightForwarderMasterListingPage;
+	public NewHSCodeCreationPageTest(){
 		super();
 		}
 	
@@ -44,8 +47,10 @@ public class NewCurrancycreationPageTest  extends TestBase {
 		initialization();
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
-		NewCurrancyCreationPage = new com.crm.qa.pages.NewCurrancyCreationPage();
-		CurrencyMasterListingPage = new com.crm.qa.pages.CurrencyMasterListingPage();
+		
+		NewHSCodeCreationPage = new com.crm.qa.pages.NewHSCodeCreationPage();
+		HSCodeMasterListingPage = new com.crm.qa.pages.HSCodeMasterListingPage();
+
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 
 	}
@@ -56,35 +61,38 @@ public class NewCurrancycreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=2)
-	public void verifyCurrancyListingpage() throws InterruptedException{
+	public void verifyFreightForwarderListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		CurrencyMasterListingPage.clickOnCurrencyListingPage();
+		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
 	}
 	
 	@Test(priority=3)
-	public void ClickonNewCurrancyButton() throws InterruptedException{
+	public void ClickonNewFreightForwarderButton() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		CurrencyMasterListingPage.clickOnCurrencyListingPage();
+		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/list");
-		NewCurrancyCreationPage.veryfyNewCurrancypage();
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
+		NewHSCodeCreationPage.Clickonadvancefltr();
+		NewHSCodeCreationPage.veryfyNewHSCodepage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/create");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/create");
 	}
 	
 	@Test(priority=4)
-	public void CartCreationPossitiveflow() throws InterruptedException, IOException{
+	public void FreightForwarderCreationPossitiveflow() throws InterruptedException, IOException{
 		homePage.verifyHomePageurl();
-		CurrencyMasterListingPage.clickOnCurrencyListingPage();
+		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/list");
-		NewCurrancyCreationPage.veryfyNewCurrancypage();
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/create");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
+		NewHSCodeCreationPage.Clickonadvancefltr();
+		NewHSCodeCreationPage.veryfyNewHSCodepage();
+		Thread.sleep(2000);
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/create");
 		
 		// Specify the path to your Excel file
-        String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\Currancy Master.xlsx";
+        String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\HSCode Master.xlsx";
         
      // Create a FileInputStream to read the Excel file
         FileInputStream fis = new FileInputStream(new File(excelFilePath));
@@ -101,13 +109,13 @@ public class NewCurrancycreationPageTest  extends TestBase {
         // Iterate through rows
         for (int i = 1; i<= 1; i++) {
          
-         String Currancy_Code =  sheet.getRow(i).getCell(0).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='currency_code']")).sendKeys(Currancy_Code);
-         System.out.println("This is my data value:- "+Currancy_Code);
+         String HSCode  =  sheet.getRow(i).getCell(0).getStringCellValue();
+         driver.findElement(By.xpath("//*[@formcontrolname='hs_code']")).sendKeys(HSCode );
+         System.out.println("This is my data value:- "+HSCode );
          
-         String Currancy_Name =  sheet.getRow(i).getCell(1).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='currency_name']")).sendKeys(Currancy_Name);
-         System.out.println("This is my data value:- "+Currancy_Name);
+         String HS_Description  =  sheet.getRow(i).getCell(1).getStringCellValue();
+         driver.findElement(By.xpath("//*[@formcontrolname='hs_description']")).sendKeys(HS_Description);
+         System.out.println("This is my data value:- "+HS_Description);
            
          String status =  sheet.getRow(i).getCell(2).getStringCellValue();
          driver.findElement(By.xpath("//*[@formcontrolname='status']")).click();
@@ -120,9 +128,9 @@ public class NewCurrancycreationPageTest  extends TestBase {
              
              String ErrorMsg = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
              System.out.println(ErrorMsg);
+     
+     		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
              
-             CurrencyMasterListingPage.veryfyCurrencyLisingpage();             
-             Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/list");
              
             }
          }

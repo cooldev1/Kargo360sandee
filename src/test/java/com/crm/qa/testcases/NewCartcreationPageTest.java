@@ -31,6 +31,7 @@ public class NewCartcreationPageTest  extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	CartMasterListingPage Cartlistingpage;
 	com.crm.qa.pages.NewCartCreationPage NewCartCreationPage;
 	
@@ -60,7 +61,7 @@ public class NewCartcreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 	}
 	
 	@Test(priority=3)
@@ -68,7 +69,7 @@ public class NewCartcreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 		NewCartCreationPage.Clickonadvancefltr();
 		NewCartCreationPage.veryfyNewCartpage();
 		
@@ -79,7 +80,7 @@ public class NewCartcreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		Cartlistingpage.clickOnCartListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
 		NewCartCreationPage.Clickonadvancefltr();
 		NewCartCreationPage.veryfyNewCartpage();
 		
@@ -123,7 +124,7 @@ public class NewCartcreationPageTest  extends TestBase {
              
              String ErrorMsg = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
              System.out.println(ErrorMsg);
-             Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+             Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/cart/list");
             }
          }
 	

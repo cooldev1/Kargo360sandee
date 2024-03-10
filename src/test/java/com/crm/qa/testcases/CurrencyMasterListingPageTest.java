@@ -30,6 +30,7 @@ public class CurrencyMasterListingPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	CartMasterListingPage Cartlistingpage;
 	NewCartcreationPageTest NewCartCreationPage;
 	com.crm.qa.pages.CurrencyMasterListingPage CurrencyMasterListingPage;
@@ -67,7 +68,7 @@ public class CurrencyMasterListingPageTest extends TestBase{
 		homePage.verifyHomePageurl();
 		CurrencyMasterListingPage.clickOnCurrencyListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/currency/list");
 	}
 		
 

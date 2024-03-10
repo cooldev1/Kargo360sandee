@@ -25,19 +25,16 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
-public class CountryMasterListingPageTest extends TestBase{
+public class HSCode_MasterCurrencyMasterListingPageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	TestBase TestBase;
-	CartMasterListingPage Cartlistingpage;
-	NewCartcreationPageTest NewCartCreationPage;
-	com.crm.qa.pages.CountryMasterListingPage CountryMasterListingPage;
-//	String sheetName = "contacts";
+	com.crm.qa.pages.HSCodeMasterListingPage HSCodeMasterListingPage;
 	
 	   
-	public CountryMasterListingPageTest(){
+	public HSCode_MasterCurrencyMasterListingPageTest(){
 			super();
 			
 	}
@@ -48,26 +45,24 @@ public class CountryMasterListingPageTest extends TestBase{
 		
 		initialization();
 		testUtil = new TestUtil();
-		Cartlistingpage = new CartMasterListingPage();
 		loginPage = new LoginPage();
-		NewCartCreationPage = new NewCartcreationPageTest();
-		CountryMasterListingPage = new com.crm.qa.pages.CountryMasterListingPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-//		TestUtil.runTimeInfo("error", "login successful");
-	
+		HSCodeMasterListingPage = new com.crm.qa.pages.HSCodeMasterListingPage();
+		
+		
 	}
 	
-//	@Test(priority=1)
-//	public void verifyhomepage() throws InterruptedException{
-//		homePage.verifyHomePageurl();
-//	}
+	@Test(priority=1)
+	public void verifyhomepage() throws InterruptedException{
+		homePage.verifyHomePageurl();
+	}
 	
 	@Test(priority=2)
-	public void verifyCountryListingpage() throws InterruptedException{
+	public void verifyFreightForwarderListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		CountryMasterListingPage.clickOnCountryListingPage();
+		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
 	}
 		
 
