@@ -19,7 +19,7 @@ public class HomePage extends TestBase {
 	}
 	
 	public String verifyHomePageurl() throws InterruptedException{
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		return driver.getCurrentUrl();
 	}
 	
