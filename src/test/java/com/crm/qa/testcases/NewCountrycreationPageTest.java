@@ -32,6 +32,7 @@ public class NewCountrycreationPageTest  extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	com.crm.qa.pages.CountryMasterListingPage CountryMasterListingPage;
 	com.crm.qa.pages.NewCountryCreationPage NewCountryCreationPage;
 	
@@ -61,7 +62,7 @@ public class NewCountrycreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		CountryMasterListingPage.clickOnCountryListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/list");
 	}
 	
 	@Test(priority=3)
@@ -69,10 +70,10 @@ public class NewCountrycreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		CountryMasterListingPage.clickOnCountryListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/list");
 			NewCountryCreationPage.Clickonadvancefltr();
 			NewCountryCreationPage.veryfyNewCountrypage();
-	    Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/create");
+	    Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/create");
 	}
 	
 	@Test(priority=4)
@@ -80,10 +81,10 @@ public class NewCountrycreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		CountryMasterListingPage.clickOnCountryListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/list");
 		NewCountryCreationPage.Clickonadvancefltr();
 		NewCountryCreationPage.veryfyNewCountrypage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/create");
+        Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/create");
 		
 		// Specify the path to your Excel file
         String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\Countray Master.xlsx";
@@ -131,7 +132,7 @@ public class NewCountrycreationPageTest  extends TestBase {
              Thread.sleep(2000);
              String ErrorMsg = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
              System.out.println(ErrorMsg);
-             Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
+             Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/country/list");
              
             }
          }

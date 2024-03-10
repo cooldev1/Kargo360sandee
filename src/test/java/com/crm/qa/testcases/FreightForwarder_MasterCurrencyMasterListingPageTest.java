@@ -30,6 +30,7 @@ public class FreightForwarder_MasterCurrencyMasterListingPageTest extends TestBa
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	CartMasterListingPage Cartlistingpage;
 	NewCartcreationPageTest NewCartCreationPage;
 	
@@ -68,7 +69,7 @@ public class FreightForwarder_MasterCurrencyMasterListingPageTest extends TestBa
 		homePage.verifyHomePageurl();
 		FreightForwarderMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/freight-forwarder/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/list");
 	}
 		
 

@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,6 +17,7 @@ import com.crm.qa.util.TestUtil;
 public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
+	TestBase TestBase;
 	
 	public LoginPageTest(){
 		super();
@@ -24,23 +26,21 @@ public class LoginPageTest extends TestBase{
 	@BeforeMethod
 	public void setUp(){
 		initialization();
-		loginPage = new LoginPage();	
+		loginPage = new LoginPage();
+		TestBase = new TestBase();
+		//prop = new Properties();
+		
 	}
 	
-//	@Test(priority=1)
-//	public void loginPageTitleTest(){
-//		String title = loginPage.validateLoginPageTitle();
-//		Assert.assertEquals(title, "Kargo360");
-//		
-//	}
+	@Test(priority=1)
+	public void loginPageTitleTest(){
+		String title = loginPage.validateLoginPageTitle();
+		Assert.assertEquals(title, "Kargo360");
+		
+	}
 	
-//	@Test(priority=2)
-//	public void crmLogoImageTest(){
-//		boolean flag = loginPage.validateCRMImage();
-//		Assert.assertTrue(flag);
-//	}
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void invalidLogin() throws InterruptedException{
         String wronguser = "sandy@spicejet.com";
         String wrongpass = "123456";
@@ -48,12 +48,12 @@ public class LoginPageTest extends TestBase{
         driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys(wrongpass);
         driver.findElement(By.xpath("//button[@class='btn btnColor btn-block auth-form-btn']")).click();
         Thread.sleep(3000);
-        String loginUrl = "https://qaspicexpress.kargo360tech.com/login";        
+        String loginUrl = prop.getProperty("url")+"/login";        
         Assert.assertEquals(loginUrl, driver.getCurrentUrl());
         System.out.println("Invalid Login Username and Password");
 	}
 	
-	@Test(priority=4)
+	@Test(priority=3)
 	public void invalidUser() throws InterruptedException{
         String wronguser = "sandy@spicejet.com";
         String wrongpass = "Pass@321";
@@ -61,25 +61,27 @@ public class LoginPageTest extends TestBase{
         driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys(wrongpass);
         driver.findElement(By.xpath("//button[@class='btn btnColor btn-block auth-form-btn']")).click();
         Thread.sleep(3000);
-        String loginUrl = "https://qaspicexpress.kargo360tech.com/login";        
+        String loginUrl = prop.getProperty("url")+ "/login";        
         Assert.assertEquals(loginUrl, driver.getCurrentUrl());
         System.out.println("Invalid Username");
 	}
 	
-	@Test(priority=5)
+	@Test(priority=4)
 	public void invalidPass() throws InterruptedException{
-        String wronguser = "sandeep.singh12@spicejet.com";
-        String wrongpass = "123456";
+        String wronguser = "Devendra.singh1@spicejet.com";
+        String wrongpass = "Pass@99";
         driver.findElement(By.xpath("//input[@formcontrolname='name']")).sendKeys(wronguser);
         driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys(wrongpass);
         driver.findElement(By.xpath("//button[@class='btn btnColor btn-block auth-form-btn']")).click();
         Thread.sleep(3000);
-        String loginUrl = "https://qaspicexpress.kargo360tech.com/login";        
+        
+        String loginUrl = prop.getProperty("url")+"/login";
+        System.out.println(loginUrl);
         Assert.assertEquals(loginUrl, driver.getCurrentUrl());
         System.out.println("Invalid Password");
 	}
 	
-	@Test(priority=6)
+	@Test(priority=5)
 	public void noCredentials() throws InterruptedException{
         String wronguser = "";
         String wrongpass = "";
@@ -87,21 +89,22 @@ public class LoginPageTest extends TestBase{
         driver.findElement(By.xpath("//input[@formcontrolname='password']")).sendKeys(wrongpass);
         driver.findElement(By.xpath("//button[@class='btn btnColor btn-block auth-form-btn']")).click();
         Thread.sleep(3000);
-        String loginUrl = "https://qaspicexpress.kargo360tech.com/login";        
+        String loginUrl =prop.getProperty("url")+ "/login";        
         Assert.assertEquals(loginUrl, driver.getCurrentUrl());
         System.out.println("Kindly Enter Username");
 	}
 	
 	
 	
-	@Test(priority=7)
+	@Test(priority=6)
 	public void loginTest() throws InterruptedException{
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		Thread.sleep(5000);
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		
+	//	driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+	//	driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		String homePageUrl = driver.getCurrentUrl();
-		Assert.assertEquals(homePageUrl, "https://qaspicexpress.kargo360tech.com/dashboard");
+		Assert.assertEquals(homePageUrl,prop.getProperty("url")+ "/dashboard");
 		takeScreenshotAtEndOfTest();
 		
 	}

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.NewFreightForwarderCreationPageTest">
+      <class name="com.crm.qa.testcases.NewHSCodeCreationPageTest">
         <methods>
-          <include name="FreightForwarderCreationPossitiveflow"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="FreightForwarderCreationPossitiveflow"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.NewFreightForwarderCreationPageTest -->
+      </class> <!-- com.crm.qa.testcases.NewHSCodeCreationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

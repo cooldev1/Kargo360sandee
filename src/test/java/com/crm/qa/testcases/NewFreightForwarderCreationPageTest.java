@@ -31,6 +31,7 @@ public class NewFreightForwarderCreationPageTest  extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	com.crm.qa.pages.NewFreightFowarderCreationPage NewFreightFowarderCreationPage;
 	com.crm.qa.pages.FreightForwarderMasterListingPage FreightForwarderMasterListingPage;
 	public NewFreightForwarderCreationPageTest(){
@@ -68,11 +69,11 @@ public class NewFreightForwarderCreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		FreightForwarderMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/freight-forwarder/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/list");
 		NewFreightFowarderCreationPage.Clickonadvancefltr();
 		NewFreightFowarderCreationPage.veryfyNewFreightFowarderpage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/freight-forwarder/create");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/create");
 	}
 	
 	@Test(priority=4)
@@ -80,11 +81,11 @@ public class NewFreightForwarderCreationPageTest  extends TestBase {
 		homePage.verifyHomePageurl();
 		FreightForwarderMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/freight-forwarder/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/list");
 		NewFreightFowarderCreationPage.Clickonadvancefltr();
 		NewFreightFowarderCreationPage.veryfyNewFreightFowarderpage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/freight-forwarder/create");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/create");
 		
 		// Specify the path to your Excel file
         String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\Freight Forwarder Master.xlsx";
@@ -125,7 +126,7 @@ public class NewFreightForwarderCreationPageTest  extends TestBase {
              String ErrorMsg = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
              System.out.println(ErrorMsg);
      
-     		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/freight-forwarder/list");
+     		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/list");
              
              
             }

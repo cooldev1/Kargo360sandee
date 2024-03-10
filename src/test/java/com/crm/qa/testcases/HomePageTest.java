@@ -15,6 +15,7 @@ public class HomePageTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
+	TestBase TestBase;
 	CartMasterListingPage contactsPage;
 
 	public HomePageTest() {
@@ -38,14 +39,14 @@ public class HomePageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyHomePageTitleTest() throws InterruptedException{
 		String homepageurl = homePage.verifyHomePageurl();
-		Assert.assertEquals(homepageurl, "https://qaspicexpress.kargo360tech.com/dashboard");
+		Assert.assertEquals(homepageurl,prop.getProperty("url")+ "/dashboard");
 	}
 	
 	
-	@AfterMethod
-	public void tearDown(){
-		driver.quit();
-	}
+//	@AfterMethod
+//	public void tearDown(){
+//		driver.quit();
+//	}
 	
 	
 
