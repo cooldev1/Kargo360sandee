@@ -24,17 +24,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-public class NewCartcreationPageTest  extends TestBase {
+public class NewCurrancycreationPageTest  extends TestBase {
 
 	
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
-	CartMasterListingPage Cartlistingpage;
-	com.crm.qa.pages.NewCartCreationPage NewCartCreationPage;
+	com.crm.qa.pages.NewCurrancyCreationPage NewCurrancyCreationPage;
+	com.crm.qa.pages.CurrencyMasterListingPage CurrencyMasterListingPage;
 	
-	public NewCartcreationPageTest(){
+	public NewCurrancycreationPageTest(){
 		super();
 		}
 	
@@ -43,48 +43,48 @@ public class NewCartcreationPageTest  extends TestBase {
 		
 		initialization();
 		testUtil = new TestUtil();
-		Cartlistingpage = new CartMasterListingPage();
 		loginPage = new LoginPage();
-		NewCartCreationPage = new com.crm.qa.pages.NewCartCreationPage();
+		NewCurrancyCreationPage = new com.crm.qa.pages.NewCurrancyCreationPage();
+		CurrencyMasterListingPage = new com.crm.qa.pages.CurrencyMasterListingPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 
 	}
-	
+
 	@Test(priority=1)
 	public void verifyhomepage() throws InterruptedException{
 		homePage.verifyHomePageurl();
 	}
 	
 	@Test(priority=2)
-	public void verifyCartListingpage() throws InterruptedException{
+	public void verifyCurrancyListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		Cartlistingpage.clickOnCartListingPage();
+		CurrencyMasterListingPage.clickOnCurrencyListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/list");
 	}
 	
 	@Test(priority=3)
-	public void ClickonNewCartButton() throws InterruptedException{
+	public void ClickonNewCurrancyButton() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		Cartlistingpage.clickOnCartListingPage();
+		CurrencyMasterListingPage.clickOnCurrencyListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
-		NewCartCreationPage.Clickonadvancefltr();
-		NewCartCreationPage.veryfyNewCartpage();
-		
+		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/list");
+		NewCurrancyCreationPage.veryfyNewCurrancypage();
+		Thread.sleep(2000);
+		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/create");
 	}
 	
 	@Test(priority=4)
 	public void CartCreationPossitiveflow() throws InterruptedException, IOException{
 		homePage.verifyHomePageurl();
-		Cartlistingpage.clickOnCartListingPage();
+		CurrencyMasterListingPage.clickOnCurrencyListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
-		NewCartCreationPage.Clickonadvancefltr();
-		NewCartCreationPage.veryfyNewCartpage();
+		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/list");
+		NewCurrancyCreationPage.veryfyNewCurrancypage();
+		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/create");
 		
 		// Specify the path to your Excel file
-        String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\NewCarCreation.xlsx";
+        String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\Currancy Master.xlsx";
         
      // Create a FileInputStream to read the Excel file
         FileInputStream fis = new FileInputStream(new File(excelFilePath));
@@ -101,36 +101,36 @@ public class NewCartcreationPageTest  extends TestBase {
         // Iterate through rows
         for (int i = 1; i<= 1; i++) {
          
-         String cart =  sheet.getRow(i).getCell(0).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='cart']")).sendKeys(cart);
-         System.out.println("This is my data value:- "+cart);
+         String Currancy_Code =  sheet.getRow(i).getCell(0).getStringCellValue();
+         driver.findElement(By.xpath("//*[@formcontrolname='currency_code']")).sendKeys(Currancy_Code);
+         System.out.println("This is my data value:- "+Currancy_Code);
          
-         String cart_desicraption =  sheet.getRow(i).getCell(1).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='cart_description']")).click();
-         driver.findElement(By.xpath("//*[@formcontrolname='cart_description']")).sendKeys(cart_desicraption);
-         System.out.println("This is my data value:- "+cart_desicraption);
-         
-         String station_code =  sheet.getRow(i).getCell(2).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='origin']")).sendKeys(station_code);
-         System.out.println("This is my data value:- "+station_code);
-         
-         String status =  sheet.getRow(i).getCell(3).getStringCellValue();
+         String Currancy_Name =  sheet.getRow(i).getCell(1).getStringCellValue();
+         driver.findElement(By.xpath("//*[@formcontrolname='currency_name']")).sendKeys(Currancy_Name);
+         System.out.println("This is my data value:- "+Currancy_Name);
+           
+         String status =  sheet.getRow(i).getCell(2).getStringCellValue();
          driver.findElement(By.xpath("//*[@formcontrolname='status']")).click();
          driver.findElement(By.xpath("//*[@formcontrolname='status']")).sendKeys(status,Keys.ENTER);
          System.out.println("This is my data value:- "+status);
+           
+         
              driver.findElement(By.xpath("//*[@title='Submit']")).click();
              Thread.sleep(2000);
              
              String ErrorMsg = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
              System.out.println(ErrorMsg);
-             Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/cart/list");
+             
+             CurrencyMasterListingPage.veryfyCurrencyLisingpage();             
+             Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/currency/list");
+             
             }
          }
-	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}
+	
 	}
 	
 
