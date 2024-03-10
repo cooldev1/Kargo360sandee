@@ -22,6 +22,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class NewCountrycreationPageTest  extends TestBase {
@@ -56,7 +57,7 @@ public class NewCountrycreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=2)
-	public void verifyCartListingpage() throws InterruptedException{
+	public void verifyCountryListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
 		CountryMasterListingPage.clickOnCountryListingPage();
 		Thread.sleep(2000);
@@ -64,24 +65,25 @@ public class NewCountrycreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=3)
-	public void ClickonNewCartButton() throws InterruptedException{
+	public void ClickonNewCountryButton() throws InterruptedException{
 		homePage.verifyHomePageurl();
 		CountryMasterListingPage.clickOnCountryListingPage();
 		Thread.sleep(2000);
 		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
 			NewCountryCreationPage.Clickonadvancefltr();
-		    NewCountryCreationPage.veryfyNewCountrypage();
-		
+			NewCountryCreationPage.veryfyNewCountrypage();
+	    Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/create");
 	}
 	
 	@Test(priority=4)
-	public void CartCreationPossitiveflow() throws InterruptedException, IOException{
+	public void CountryCreationPossitiveflow() throws InterruptedException, IOException{
 		homePage.verifyHomePageurl();
 		CountryMasterListingPage.clickOnCountryListingPage();
 		Thread.sleep(2000);
 		Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
 		NewCountryCreationPage.Clickonadvancefltr();
-		  NewCountryCreationPage.veryfyNewCountrypage();
+		NewCountryCreationPage.veryfyNewCountrypage();
+        Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/create");
 		
 		// Specify the path to your Excel file
         String excelFilePath = "C:\\Users\\devendra.singh1\\git\\Kargo360\\src\\main\\java\\com\\crm\\qa\\testdata\\Countray Master.xlsx";
@@ -125,14 +127,19 @@ public class NewCountrycreationPageTest  extends TestBase {
          System.out.println("This is my data value:- "+cass);
          
          
-             driver.findElement(By.xpath("//*[@title='Submit']")).click();
-             Thread.sleep(5000);
+            driver.findElement(By.xpath("//*[@title='Submit']")).click();
+             Thread.sleep(2000);
+             String ErrorMsg = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
+             System.out.println(ErrorMsg);
+             Assert.assertEquals(driver.getCurrentUrl(), "https://qaspicexpress.kargo360tech.com/country/list");
+             
             }
          }
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}
-	}
+
+}
 	
 

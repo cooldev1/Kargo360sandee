@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.NewCountrycreationPageTest">
+      <class name="com.crm.qa.testcases.NewCurrancycreationPageTest">
         <methods>
-          <include name="setUp"/>
           <include name="CartCreationPossitiveflow"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.NewCountrycreationPageTest -->
+      </class> <!-- com.crm.qa.testcases.NewCurrancycreationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

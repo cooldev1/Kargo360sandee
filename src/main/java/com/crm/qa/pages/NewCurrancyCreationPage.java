@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
 
-public class NewCountryCreationPage extends TestBase {
+public class NewCurrancyCreationPage extends TestBase {
 	
-// to click on new Currancy button	
-	@FindBy(xpath = "//*[@title='Create Currency']")
+// to click on new Cart button	
+	@FindBy(xpath = "//*[@title='Create Country']")
 	WebElement NewCart_btn;
 	
 	@FindBy(xpath = "//*[@title='Refresh']")
@@ -20,7 +20,7 @@ public class NewCountryCreationPage extends TestBase {
 	WebElement advance_fltr;
 	
 	// Initializing the Page Objects:
-		public NewCountryCreationPage() {
+		public NewCurrancyCreationPage() {
 			PageFactory.initElements(driver, this);
 		}
 
@@ -32,8 +32,9 @@ public class NewCountryCreationPage extends TestBase {
 		}
 
 
-		public void veryfyNewCountrypage() {
+
+		public void veryfyNewCurrancypage() {
 			// TODO Auto-generated method stub
-			 driver.findElement(By.xpath("//*[@title='Create Country']")).click();
+			driver.findElement(By.xpath("//*[@title='Create Currency']")).click();
 		}
 }
