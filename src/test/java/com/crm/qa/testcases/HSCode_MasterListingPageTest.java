@@ -25,7 +25,7 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
-public class HSCode_MasterCurrencyMasterListingPageTest extends TestBase{
+public class HSCode_MasterListingPageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
@@ -34,7 +34,7 @@ public class HSCode_MasterCurrencyMasterListingPageTest extends TestBase{
 	com.crm.qa.pages.HSCodeMasterListingPage HSCodeMasterListingPage;
 	
 	   
-	public HSCode_MasterCurrencyMasterListingPageTest(){
+	public HSCode_MasterListingPageTest(){
 			super();
 			
 	}

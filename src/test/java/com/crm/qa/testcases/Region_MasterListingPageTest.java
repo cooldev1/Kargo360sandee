@@ -25,21 +25,16 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
-public class FreightForwarder_MasterCurrencyMasterListingPageTest extends TestBase{
+public class Region_MasterListingPageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	TestBase TestBase;
-	CartMasterListingPage Cartlistingpage;
-	NewCartcreationPageTest NewCartCreationPage;
 	
-	com.crm.qa.pages.FreightForwarderMasterListingPage FreightForwarderMasterListingPage;
-	
-//	String sheetName = "contacts";
-	
+	com.crm.qa.pages.RegionMasterListingPage RegionMasterListingPage;
 	   
-	public FreightForwarder_MasterCurrencyMasterListingPageTest(){
+	public Region_MasterListingPageTest(){
 			super();
 			
 	}
@@ -50,13 +45,10 @@ public class FreightForwarder_MasterCurrencyMasterListingPageTest extends TestBa
 		
 		initialization();
 		testUtil = new TestUtil();
-		Cartlistingpage = new CartMasterListingPage();
 		loginPage = new LoginPage();
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
+		RegionMasterListingPage = new com.crm.qa.pages.RegionMasterListingPage();
 		
-		FreightForwarderMasterListingPage = new com.crm.qa.pages.FreightForwarderMasterListingPage();
-		
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	
 	}
 	
 	@Test(priority=1)
@@ -65,11 +57,11 @@ public class FreightForwarder_MasterCurrencyMasterListingPageTest extends TestBa
 	}
 	
 	@Test(priority=2)
-	public void verifyFreightForwarderListingpage() throws InterruptedException{
+	public void verifyRegionListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		FreightForwarderMasterListingPage.clickOnFreightForwarderListingPage();
+		RegionMasterListingPage.clickOnRegionListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/freight-forwarder/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/region/list");
 	}
 		
 
