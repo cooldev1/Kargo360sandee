@@ -1,17 +1,22 @@
 package com.crm.qa.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.ITestResult;
 
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
@@ -68,9 +73,28 @@ public class TestBase {
 	}
 	
 	
-	
-	
-	
+	public void failed()  {
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	try {
+		String currentDir = System.getProperty("user.dir");
+		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
+	}catch(IOException e) {
+		e.printStackTrace();
+							}
+	}
+
+
+//	public void onTestFailure(ITestResult result) {
+//		// TODO Auto-generated method stub
+//		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		try {
+//			String currentDir = System.getProperty("user.dir");
+//			FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
+//		}catch(IOException e) {
+//			e.printStackTrace();
+//								}
+//	}
+//	
 	
 	
 	
