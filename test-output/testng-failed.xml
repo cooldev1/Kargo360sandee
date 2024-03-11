@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.StateCodeCreationPageTest">
+      <class name="com.crm.qa.testcases.AircraftCreationPageTest">
         <methods>
-          <include name="StateCreationPossitiveflow"/>
+          <include name="AircraftCreationPossitiveflow"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.StateCodeCreationPageTest -->
+      </class> <!-- com.crm.qa.testcases.AircraftCreationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
