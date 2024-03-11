@@ -17,10 +17,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.testng.ITestResult;
 
 import com.crm.qa.base.TestBase;
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {
+
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
@@ -64,12 +66,14 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
-		try {
-			TestUtil.takeScreenshotAtEndOfTest();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			TestUtil.takeScreenshotAtEndOfTest();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 	}
+	
+	
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 		System.out.println("Trying to find Element By : " + by.toString());
@@ -158,4 +162,5 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		
 	}
 
+	
 }

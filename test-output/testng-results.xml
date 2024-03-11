@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-11T12:55:58Z" name="Default suite" finished-at="2024-03-11T12:56:55Z" duration-ms="56289">
+  <suite started-at="2024-03-11T20:07:22Z" name="Default suite" finished-at="2024-03-11T20:08:24Z" duration-ms="62468">
     <groups>
     </groups>
-    <test started-at="2024-03-11T12:55:58Z" name="Default test" finished-at="2024-03-11T12:56:55Z" duration-ms="56289">
-      <class name="com.crm.qa.testcases.AircraftCreationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:25:58Z" name="setUp" finished-at="2024-03-11T18:26:03Z" duration-ms="4240" status="PASS">
+    <test started-at="2024-03-11T20:07:22Z" name="Default test" finished-at="2024-03-11T20:08:24Z" duration-ms="62468">
+      <class name="com.crm.qa.testcases.Airport_WarehouseCreationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:22Z" name="setUp" finished-at="2024-03-12T01:37:24Z" duration-ms="2428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:03Z" name="verifyhomepage" finished-at="2024-03-11T18:26:06Z" duration-ms="3126" status="PASS">
+        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:24Z" name="verifyhomepage" finished-at="2024-03-12T01:37:27Z" duration-ms="3033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:06Z" name="setUp" finished-at="2024-03-11T18:26:09Z" duration-ms="3646" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:27Z" name="setUp" finished-at="2024-03-12T01:37:29Z" duration-ms="2076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAircraftListingpage()[pri:2, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:09Z" name="verifyAircraftListingpage" finished-at="2024-03-11T18:26:16Z" duration-ms="7074" status="PASS">
+        <test-method signature="verifyAirport_WarehouseListingpage()[pri:2, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:29Z" name="verifyAirport_WarehouseListingpage" finished-at="2024-03-12T01:37:36Z" duration-ms="6536" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAircraftListingpage -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:16Z" name="setUp" finished-at="2024-03-11T18:26:20Z" duration-ms="3141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ClickonNewAircraftButton()[pri:3, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:20Z" name="ClickonNewAircraftButton" finished-at="2024-03-11T18:26:30Z" duration-ms="10608" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickonNewAircraftButton -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:30Z" name="setUp" finished-at="2024-03-11T18:26:35Z" duration-ms="4951" status="PASS">
+        </test-method> <!-- verifyAirport_WarehouseListingpage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:36Z" name="setUp" finished-at="2024-03-12T01:37:38Z" duration-ms="2158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AircraftCreationPossitiveflow()[pri:4, instance:com.crm.qa.testcases.AircraftCreationPageTest@51549490]" started-at="2024-03-11T18:26:35Z" name="AircraftCreationPossitiveflow" finished-at="2024-03-11T18:26:55Z" duration-ms="19470" status="FAIL">
+        <test-method signature="ClickonNewAirport_WarehouseButton()[pri:3, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:38Z" name="ClickonNewAirport_WarehouseButton" finished-at="2024-03-12T01:37:48Z" duration-ms="9726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonNewAirport_WarehouseButton -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:48Z" name="setUp" finished-at="2024-03-12T01:37:50Z" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="WarehouseCreationPossitiveflow()[pri:4, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:37:50Z" name="WarehouseCreationPossitiveflow" finished-at="2024-03-12T01:38:06Z" duration-ms="16288" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [https://qaspicexpress.kargo360tech.com/aircraft/list] but found [https://qaspicexpress.kargo360tech.com/aircraft/create]]]>
+              <![CDATA[expected [https://qaspicexpress.kargo360tech.com/airport/list] but found [https://qaspicexpress.kargo360tech.com/airport/create]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://qaspicexpress.kargo360tech.com/aircraft/list] but found [https://qaspicexpress.kargo360tech.com/aircraft/create]
+              <![CDATA[java.lang.AssertionError: expected [https://qaspicexpress.kargo360tech.com/airport/list] but found [https://qaspicexpress.kargo360tech.com/airport/create]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.crm.qa.testcases.AircraftCreationPageTest.AircraftCreationPossitiveflow(AircraftCreationPageTest.java:256)
+	at com.crm.qa.testcases.Airport_WarehouseCreationPageTest.WarehouseCreationPossitiveflow(Airport_WarehouseCreationPageTest.java:182)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,8 +79,57 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AircraftCreationPossitiveflow -->
-      </class> <!-- com.crm.qa.testcases.AircraftCreationPageTest -->
+        </test-method> <!-- WarehouseCreationPossitiveflow -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:38:07Z" name="setUp" finished-at="2024-03-12T01:38:08Z" duration-ms="1940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AirportCreationPossitiveflow()[pri:5, instance:com.crm.qa.testcases.Airport_WarehouseCreationPageTest@7daa0fbd]" started-at="2024-03-12T01:38:08Z" name="AirportCreationPossitiveflow" finished-at="2024-03-12T01:38:24Z" duration-ms="15576" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://qaspicexpress.kargo360tech.com/airport/list] but found [https://qaspicexpress.kargo360tech.com/airport/create]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://qaspicexpress.kargo360tech.com/airport/list] but found [https://qaspicexpress.kargo360tech.com/airport/create]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.crm.qa.testcases.Airport_WarehouseCreationPageTest.AirportCreationPossitiveflow(Airport_WarehouseCreationPageTest.java:288)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AirportCreationPossitiveflow -->
+      </class> <!-- com.crm.qa.testcases.Airport_WarehouseCreationPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

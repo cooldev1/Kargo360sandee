@@ -28,16 +28,15 @@ import com.crm.qa.util.CustomListener;
 import com.crm.qa.util.TestUtil;
 
 @Listeners(CustomListener.class)
-public class Region_MasterListingPageTest extends TestBase{
+public class Airport_Warehouse_MasterListingPageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	TestBase TestBase;
-	
-	com.crm.qa.pages.RegionMasterListingPage RegionMasterListingPage;
-	   
-	public Region_MasterListingPageTest(){
+	com.crm.qa.pages.Airport_WarehouseMasterListingPage Airport_WarehouseMasterListingPage;
+		   
+	public Airport_Warehouse_MasterListingPageTest(){
 			super();
 			
 	}
@@ -49,9 +48,8 @@ public class Region_MasterListingPageTest extends TestBase{
 		initialization();
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
-		RegionMasterListingPage = new com.crm.qa.pages.RegionMasterListingPage();
-		
+		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		Airport_WarehouseMasterListingPage = new com.crm.qa.pages.Airport_WarehouseMasterListingPage();
 	}
 	
 	@Test(priority=1)
@@ -60,11 +58,11 @@ public class Region_MasterListingPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
-	public void verifyRegionListingpage() throws InterruptedException{
+	public void verifyAircraftListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		RegionMasterListingPage.clickOnRegionListingPage();
+		Airport_WarehouseMasterListingPage.clickOnAirportListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/region/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/airport/list");
 	}
 		
 
