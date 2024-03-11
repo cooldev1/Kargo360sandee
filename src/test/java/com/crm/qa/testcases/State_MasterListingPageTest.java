@@ -25,16 +25,15 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
-public class priority_MasterListingPageTest extends TestBase{
+public class State_MasterListingPageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	TestBase TestBase;
-	com.crm.qa.pages.priorityMasterListingPage priorityMasterListingPage;
-
+	com.crm.qa.pages.StateMasterListingPage StateMasterListingPage;
 	   
-	public priority_MasterListingPageTest(){
+	public State_MasterListingPageTest(){
 			super();
 			
 	}
@@ -47,8 +46,7 @@ public class priority_MasterListingPageTest extends TestBase{
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		priorityMasterListingPage = new com.crm.qa.pages.priorityMasterListingPage();
-		
+		StateMasterListingPage = new com.crm.qa.pages.StateMasterListingPage();		
 		
 	}
 	
@@ -58,11 +56,11 @@ public class priority_MasterListingPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
-	public void verifypriorityListingpage() throws InterruptedException{
+	public void verifyStateListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		priorityMasterListingPage.clickOnpriorityListingPage();
+		StateMasterListingPage.clickOnStateListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/state/list");
 	}
 		
 
