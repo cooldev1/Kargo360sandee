@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.RegionCodeCreationPageTest">
+      <class name="com.crm.qa.testcases.StateCodeCreationPageTest">
         <methods>
-          <include name="RegionCreationPossitiveflow"/>
+          <include name="StateCreationPossitiveflow"/>
           <include name="setUp"/>
-          <include name="ClickonNewRegionButton"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.RegionCodeCreationPageTest -->
+      </class> <!-- com.crm.qa.testcases.StateCodeCreationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
