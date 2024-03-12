@@ -23,7 +23,7 @@ public class CustomListener extends TestBase implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println("Fail Test");
-		failed();
+		failed(result.getMethod().getMethodName());
 	}
 
 	public void onTestSkipped(ITestResult result) {

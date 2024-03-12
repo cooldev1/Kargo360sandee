@@ -62,7 +62,7 @@ public class NewHSCodeCreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=2)
-	public void verifyFreightForwarderListingpage() throws InterruptedException{
+	public void verifyHSCodeListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
 		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
@@ -70,7 +70,7 @@ public class NewHSCodeCreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=3)
-	public void ClickonNewFreightForwarderButton() throws InterruptedException{
+	public void ClickonNewHSCodeButton() throws InterruptedException{
 		homePage.verifyHomePageurl();
 		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
@@ -82,7 +82,7 @@ public class NewHSCodeCreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=4)
-	public void FreightForwarderCreationPossitiveflow() throws InterruptedException, IOException{
+	public void HSCodeCreationPossitiveflow() throws InterruptedException, IOException{
 		homePage.verifyHomePageurl();
 		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
 		Thread.sleep(2000);
