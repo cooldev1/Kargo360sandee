@@ -20,6 +20,8 @@ import org.testng.ITestResult;
 
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
+import java.lang.reflect.Method;
+
 
 public class TestBase {
 	
@@ -73,29 +75,19 @@ public class TestBase {
 	}
 	
 	
-	public void failed()  {
+
+	public void failed(String testMethodName)  {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	try {
 		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
+		
+		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/"+testMethodName+ System.currentTimeMillis() + ".png"));
 	}catch(IOException e) {
 		e.printStackTrace();
 							}
 	}
 
 
-//	public void onTestFailure(ITestResult result) {
-//		// TODO Auto-generated method stub
-//		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		try {
-//			String currentDir = System.getProperty("user.dir");
-//			FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-//		}catch(IOException e) {
-//			e.printStackTrace();
-//								}
-//	}
-//	
-	
 	
 	
 

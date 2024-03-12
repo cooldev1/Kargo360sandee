@@ -28,16 +28,15 @@ import com.crm.qa.util.CustomListener;
 import com.crm.qa.util.TestUtil;
 
 @Listeners(CustomListener.class)
-public class HSCode_MasterListingPageTest extends TestBase{
+public class Supplier_GSTIN_MasterListingPageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	TestBase TestBase;
-	com.crm.qa.pages.HSCodeMasterListingPage HSCodeMasterListingPage;
-	
-	   
-	public HSCode_MasterListingPageTest(){
+	com.crm.qa.pages.Supplier_GSTIN_MasterListingPage Supplier_GSTIN_MasterListingPage;
+		   
+	public Supplier_GSTIN_MasterListingPageTest(){
 			super();
 			
 	}
@@ -50,9 +49,7 @@ public class HSCode_MasterListingPageTest extends TestBase{
 		testUtil = new TestUtil();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		HSCodeMasterListingPage = new com.crm.qa.pages.HSCodeMasterListingPage();
-		
-		
+		Supplier_GSTIN_MasterListingPage = new com.crm.qa.pages.Supplier_GSTIN_MasterListingPage();
 	}
 	
 	@Test(priority=1)
@@ -61,11 +58,11 @@ public class HSCode_MasterListingPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
-	public void verifyHSCodeListingpage() throws InterruptedException{
+	public void verifySupplier_GSTINListingpage() throws InterruptedException{
 		homePage.verifyHomePageurl();
-		HSCodeMasterListingPage.clickOnFreightForwarderListingPage();
+		Supplier_GSTIN_MasterListingPage.clickOnSupplier_GSTINListingPage();
 		Thread.sleep(2000);
-		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/hs-code/list");
+		Assert.assertEquals(driver.getCurrentUrl(),prop.getProperty("url")+ "/supplier-gstin/list");
 	}
 		
 

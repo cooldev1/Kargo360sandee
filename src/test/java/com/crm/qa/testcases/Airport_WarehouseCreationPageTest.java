@@ -108,6 +108,11 @@ public class Airport_WarehouseCreationPageTest  extends TestBase {
         // Iterate through rows
         for (int i = 1; i<= Lastrow; i++) {
          
+        	 String type =  sheet.getRow(i).getCell(2).getStringCellValue();
+             driver.findElement(By.xpath("//*[@formcontrolname='type']")).click();
+             driver.findElement(By.xpath("//*[@formcontrolname='type']")).sendKeys(type,Keys.ENTER);
+             System.out.println("This is my data value:- "+type);
+        	
          String Code  =  sheet.getRow(i).getCell(0).getStringCellValue();
          Thread.sleep(2000);
          driver.findElement(By.xpath("//*[@formcontrolname='code']")).sendKeys(Code );
@@ -117,10 +122,7 @@ public class Airport_WarehouseCreationPageTest  extends TestBase {
          driver.findElement(By.xpath("//*[@formcontrolname='name']")).sendKeys(name);
          System.out.println("This is my data value:- "+name);
            
-         String type =  sheet.getRow(i).getCell(2).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='type']")).click();
-         driver.findElement(By.xpath("//*[@formcontrolname='type']")).sendKeys(type,Keys.ENTER);
-         System.out.println("This is my data value:- "+type);
+        
          
          String Airport_Code =  sheet.getRow(i).getCell(3).getStringCellValue();
          driver.findElement(By.xpath("//*[@formcontrolname='mapping_code']")).click();
@@ -213,6 +215,11 @@ public class Airport_WarehouseCreationPageTest  extends TestBase {
        System.out.println("This is the last row count:- "+Lastrow);
         // Iterate through rows
         for (int i = 1; i<= Lastrow; i++) {
+        	
+        	 String type =  sheet.getRow(i).getCell(2).getStringCellValue();
+             driver.findElement(By.xpath("//*[@formcontrolname='type']")).click();
+             driver.findElement(By.xpath("//*[@formcontrolname='type']")).sendKeys(type,Keys.ENTER);
+             System.out.println("This is my data value:- "+type);	
          
          String Code  =  sheet.getRow(i).getCell(0).getStringCellValue();
          Thread.sleep(2000);
@@ -223,10 +230,7 @@ public class Airport_WarehouseCreationPageTest  extends TestBase {
          driver.findElement(By.xpath("//*[@formcontrolname='name']")).sendKeys(name);
          System.out.println("This is my data value:- "+name);
            
-         String type =  sheet.getRow(i).getCell(2).getStringCellValue();
-         driver.findElement(By.xpath("//*[@formcontrolname='type']")).click();
-         driver.findElement(By.xpath("//*[@formcontrolname='type']")).sendKeys(type,Keys.ENTER);
-         System.out.println("This is my data value:- "+type);
+        
 //         
 //         String Airport_Code =  sheet.getRow(i).getCell(3).getStringCellValue();
 //         driver.findElement(By.xpath("//*[@formcontrolname='mapping_code']")).click();

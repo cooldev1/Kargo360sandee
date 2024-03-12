@@ -77,7 +77,7 @@ public class NewCurrancycreationPageTest  extends TestBase {
 	}
 	
 	@Test(priority=4)
-	public void CartCreationPossitiveflow() throws InterruptedException, IOException{
+	public void CurrancyCreationPossitiveflow() throws InterruptedException, IOException{
 		homePage.verifyHomePageurl();
 		CurrencyMasterListingPage.clickOnCurrencyListingPage();
 		Thread.sleep(2000);
