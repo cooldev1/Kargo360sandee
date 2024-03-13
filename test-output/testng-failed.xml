@@ -5,7 +5,7 @@
     <classes>
       <class name="com.crm.qa.testcases.D2D_BookingPageTest">
         <methods>
-          <include name="D2D_Warehouse_To_Warehouse_flow"/>
+          <include name="D2DBooking_Walking_Gen_Warehouse_to_Warehouse_flow"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.D2D_BookingPageTest -->
