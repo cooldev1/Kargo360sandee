@@ -116,6 +116,9 @@ public class Maintain_AWBUpdatePageTest  extends TestBase {
          Thread.sleep(1000);
          driver.findElement(By.xpath("//*[@title='Save']")).click();
          //    Thread.sleep(2000);
+         
+         //To Capture the PopUp msg when we submit 
+         
          	    driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
          		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
              String popupText  = driver.findElement(By.xpath("//*[@class='toast-top-right toast-container']")).getText();
