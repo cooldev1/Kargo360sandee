@@ -1,84 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Kargo360]" guice-stage="DEVELOPMENT" verbose="5">
-  <test name="All Test case Run(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.priority_MasterListingPageTest">
+      <class name="com.crm.qa.testcases.Maintain_AWBUpdatePageTest">
         <methods>
-          <include name="verifypriorityListingpage"/>
           <include name="setUp"/>
+          <include name="Maintain_AWB_Reporcessflow"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.priority_MasterListingPageTest -->
-      <class name="com.crm.qa.testcases.NewCountrycreationPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="CountryCreationPossitiveflow"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.NewCountrycreationPageTest -->
-      <class name="com.crm.qa.testcases.Airport_WarehouseCreationPageTest">
-        <methods>
-          <include name="WarehouseCreationPossitiveflow"/>
-          <include name="AirportCreationPossitiveflow"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.Airport_WarehouseCreationPageTest -->
-      <class name="com.crm.qa.testcases.Supplier_GSTINCreationPageTest">
-        <methods>
-          <include name="Supplier_GSTIN_Possitiveflow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.Supplier_GSTINCreationPageTest -->
-      <class name="com.crm.qa.testcases.NewCurrancycreationPageTest">
-        <methods>
-          <include name="CartCreationPossitiveflow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.NewCurrancycreationPageTest -->
-      <class name="com.crm.qa.testcases.NewFreightForwarderCreationPageTest">
-        <methods>
-          <include name="FreightForwarderCreationPossitiveflow"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.NewFreightForwarderCreationPageTest -->
-      <class name="com.crm.qa.testcases.StateCodeCreationPageTest">
-        <methods>
-          <include name="StateCreationPossitiveflow"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.StateCodeCreationPageTest -->
-      <class name="com.crm.qa.testcases.AircraftCreationPageTest">
-        <methods>
-          <include name="AircraftCreationPossitiveflow"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.AircraftCreationPageTest -->
-      <class name="com.crm.qa.testcases.RegionCodeCreationPageTest">
-        <methods>
-          <include name="RegionCreationPossitiveflow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.RegionCodeCreationPageTest -->
-      <class name="com.crm.qa.testcases.NewCartcreationPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="CartCreationPossitiveflow"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.NewCartcreationPageTest -->
-      <class name="com.crm.qa.testcases.NewHSCodeCreationPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="FreightForwarderCreationPossitiveflow"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.NewHSCodeCreationPageTest -->
+      </class> <!-- com.crm.qa.testcases.Maintain_AWBUpdatePageTest -->
     </classes>
-  </test> <!-- All Test case Run(failed) -->
-</suite> <!-- Failed suite [Kargo360] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
