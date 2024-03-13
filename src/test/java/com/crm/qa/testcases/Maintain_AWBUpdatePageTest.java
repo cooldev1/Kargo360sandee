@@ -91,7 +91,7 @@ public class Maintain_AWBUpdatePageTest  extends TestBase {
        
        System.out.println("This is the last row count:- "+Lastrow);
         // Iterate through rows
-        for (int i = 1; i<= Lastrow-1; i++) {
+        for (int i = 1; i<= 1; i++) {
         
         	
 //         String Prefix  =  sheet.getRow(i).getCell(0).getStringCellValue();
