@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.Void_AWBPageTest">
+      <class name="com.crm.qa.testcases.D2D_BookingPageTest">
         <methods>
+          <include name="D2D_Warehouse_To_Warehouse_flow"/>
           <include name="setUp"/>
-          <include name="Maintain_AWB_Reporcessflow"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.Void_AWBPageTest -->
+      </class> <!-- com.crm.qa.testcases.D2D_BookingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
