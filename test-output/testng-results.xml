@@ -1,85 +1,409 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="20" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T20:29:40Z" name="Default suite" finished-at="2024-03-13T20:33:11Z" duration-ms="211148">
+  <suite started-at="2024-03-17T11:19:11Z" name="Default suite" finished-at="2024-03-17T11:38:24Z" duration-ms="1153373">
     <groups>
     </groups>
-    <test started-at="2024-03-13T20:29:40Z" name="Default test" finished-at="2024-03-13T20:33:11Z" duration-ms="211148">
-      <class name="com.crm.qa.testcases.D2D_BookingPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:40Z" name="setUp" finished-at="2024-03-14T01:59:42Z" duration-ms="2388" status="PASS">
+    <test started-at="2024-03-17T11:19:11Z" name="Default test" finished-at="2024-03-17T11:38:24Z" duration-ms="1153373">
+      <class name="com.crm.qa.testcases.A2A_BookingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:11Z" name="setUp" finished-at="2024-03-17T16:49:13Z" duration-ms="2364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:42Z" name="verifyhomepage" finished-at="2024-03-14T01:59:45Z" duration-ms="3032" status="PASS">
+        <test-method signature="verifyhomepage()[pri:1, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:13Z" name="verifyhomepage" finished-at="2024-03-17T16:49:16Z" duration-ms="3033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:45Z" name="tearDown" finished-at="2024-03-14T01:59:46Z" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:16Z" name="tearDown" finished-at="2024-03-17T16:49:17Z" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:46Z" name="setUp" finished-at="2024-03-14T01:59:48Z" duration-ms="2017" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:17Z" name="setUp" finished-at="2024-03-17T16:49:19Z" duration-ms="1816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyD2D_Booking_gpage()[pri:2, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:48Z" name="verifyD2D_Booking_gpage" finished-at="2024-03-14T01:59:54Z" duration-ms="5992" status="PASS">
+        <test-method signature="verifyA2A_Booking_gpage()[pri:2, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:19Z" name="verifyA2A_Booking_gpage" finished-at="2024-03-17T16:49:24Z" duration-ms="5945" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyD2D_Booking_gpage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:54Z" name="tearDown" finished-at="2024-03-14T01:59:54Z" duration-ms="210" status="PASS">
+        </test-method> <!-- verifyA2A_Booking_gpage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:24Z" name="tearDown" finished-at="2024-03-17T16:49:25Z" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:54Z" name="setUp" finished-at="2024-03-14T01:59:56Z" duration-ms="2109" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:25Z" name="setUp" finished-at="2024-03-17T16:49:27Z" duration-ms="1857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="D2D_Warehouse_To_Warehouse_flow()[pri:3, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T01:59:56Z" name="D2D_Warehouse_To_Warehouse_flow" finished-at="2024-03-14T02:00:41Z" duration-ms="45201" status="PASS">
+        <test-method signature="A2A_Prepaid_one_Lag_flow()[pri:3, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:49:27Z" name="A2A_Prepaid_one_Lag_flow" finished-at="2024-03-17T16:50:07Z" duration-ms="40181" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- D2D_Warehouse_To_Warehouse_flow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:00:41Z" name="tearDown" finished-at="2024-03-14T02:00:41Z" duration-ms="248" status="PASS">
+        </test-method> <!-- A2A_Prepaid_one_Lag_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:50:07Z" name="tearDown" finished-at="2024-03-17T16:50:07Z" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:00:41Z" name="setUp" finished-at="2024-03-14T02:00:43Z" duration-ms="1988" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:50:07Z" name="setUp" finished-at="2024-03-17T16:50:09Z" duration-ms="1821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="D2DBooking_Prepaid_Gen_Warehouse_to_Warehouse_flow()[pri:4, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:00:43Z" name="D2DBooking_Prepaid_Gen_Warehouse_to_Warehouse_flow" finished-at="2024-03-14T02:01:28Z" duration-ms="44660" status="PASS">
+        <test-method signature="A2ABooking_Prepaid_Gen_one_Lag_flow()[pri:4, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:50:09Z" name="A2ABooking_Prepaid_Gen_one_Lag_flow" finished-at="2024-03-17T16:50:53Z" duration-ms="44277" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- D2DBooking_Prepaid_Gen_Warehouse_to_Warehouse_flow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:01:28Z" name="tearDown" finished-at="2024-03-14T02:01:28Z" duration-ms="232" status="PASS">
+        </test-method> <!-- A2ABooking_Prepaid_Gen_one_Lag_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:50:53Z" name="tearDown" finished-at="2024-03-17T16:50:53Z" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:01:28Z" name="setUp" finished-at="2024-03-14T02:01:30Z" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:50:53Z" name="setUp" finished-at="2024-03-17T16:50:55Z" duration-ms="1806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="D2DBooking_Po_Mail_S_Warehouse_to_Warehouse_flow()[pri:5, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:01:30Z" name="D2DBooking_Po_Mail_S_Warehouse_to_Warehouse_flow" finished-at="2024-03-14T02:02:15Z" duration-ms="44682" status="PASS">
+        <test-method signature="A2ABooking_Po_Mail_S_One_lag_flow()[pri:5, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:50:55Z" name="A2ABooking_Po_Mail_S_One_lag_flow" finished-at="2024-03-17T16:51:39Z" duration-ms="43746" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- D2DBooking_Po_Mail_S_Warehouse_to_Warehouse_flow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:02:15Z" name="tearDown" finished-at="2024-03-14T02:02:15Z" duration-ms="198" status="PASS">
+        </test-method> <!-- A2ABooking_Po_Mail_S_One_lag_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:51:39Z" name="tearDown" finished-at="2024-03-17T16:51:39Z" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:02:15Z" name="setUp" finished-at="2024-03-14T02:02:17Z" duration-ms="1995" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:51:39Z" name="setUp" finished-at="2024-03-17T16:51:41Z" duration-ms="1976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="D2DBooking_Walking_Gen_Warehouse_to_Warehouse_flow()[pri:6, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:02:17Z" name="D2DBooking_Walking_Gen_Warehouse_to_Warehouse_flow" finished-at="2024-03-14T02:03:11Z" duration-ms="53779" status="PASS">
+        <test-method signature="A2ABooking_Walking_One_Lag_flow()[pri:6, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:51:41Z" name="A2ABooking_Walking_One_Lag_flow" finished-at="2024-03-17T16:52:25Z" duration-ms="43701" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEVENDRAS-13039', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DEVEND~1.SIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2df2b49c80c6a6e1e93c1222ea5f66fb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEVENDRAS-13039', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DEVEND~1.SIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2df2b49c80c6a6e1e93c1222ea5f66fb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:428)
+	at com.crm.qa.testcases.A2A_BookingPageTest.A2ABooking_Walking_One_Lag_flow(A2A_BookingPageTest.java:881)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- D2DBooking_Walking_Gen_Warehouse_to_Warehouse_flow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.D2D_BookingPageTest@35645047]" started-at="2024-03-14T02:03:11Z" name="tearDown" finished-at="2024-03-14T02:03:11Z" duration-ms="229" status="PASS">
+        </test-method> <!-- A2ABooking_Walking_One_Lag_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:52:26Z" name="tearDown" finished-at="2024-03-17T16:52:26Z" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.D2D_BookingPageTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:52:26Z" name="setUp" finished-at="2024-03-17T16:52:28Z" duration-ms="1813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Prepaid_Double_leg_Gen_flow()[pri:7, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:52:28Z" name="A2A_Prepaid_Double_leg_Gen_flow" finished-at="2024-03-17T16:53:21Z" duration-ms="52841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Prepaid_Double_leg_Gen_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:53:21Z" name="tearDown" finished-at="2024-03-17T16:53:21Z" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:53:21Z" name="setUp" finished-at="2024-03-17T16:53:23Z" duration-ms="2073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Prepaid_Double_leg_PoMail_flow()[pri:8, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:53:23Z" name="A2A_Prepaid_Double_leg_PoMail_flow" finished-at="2024-03-17T16:54:16Z" duration-ms="53149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Prepaid_Double_leg_PoMail_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:54:16Z" name="tearDown" finished-at="2024-03-17T16:54:16Z" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:54:16Z" name="setUp" finished-at="2024-03-17T16:54:18Z" duration-ms="2080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Prepaid_Double_leg_Walking_flow()[pri:9, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:54:18Z" name="A2A_Prepaid_Double_leg_Walking_flow" finished-at="2024-03-17T16:55:22Z" duration-ms="63680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Prepaid_Double_leg_Walking_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:55:22Z" name="tearDown" finished-at="2024-03-17T16:55:22Z" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:55:22Z" name="setUp" finished-at="2024-03-17T16:55:25Z" duration-ms="2753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Prepaid_Triple_leg_Gen_flow()[pri:10, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:55:25Z" name="A2A_Prepaid_Triple_leg_Gen_flow" finished-at="2024-03-17T16:56:29Z" duration-ms="63915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Prepaid_Triple_leg_Gen_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:56:29Z" name="tearDown" finished-at="2024-03-17T16:56:29Z" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:56:29Z" name="setUp" finished-at="2024-03-17T16:56:31Z" duration-ms="2072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Prepaid_Third_leg_POMail_flow()[pri:11, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:56:31Z" name="A2A_Prepaid_Third_leg_POMail_flow" finished-at="2024-03-17T16:57:35Z" duration-ms="63859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Prepaid_Third_leg_POMail_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:57:35Z" name="tearDown" finished-at="2024-03-17T16:57:35Z" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:57:35Z" name="setUp" finished-at="2024-03-17T16:57:37Z" duration-ms="1877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Prepaid_Triple_leg_WLK_flow()[pri:12, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:57:37Z" name="A2A_Prepaid_Triple_leg_WLK_flow" finished-at="2024-03-17T16:58:48Z" duration-ms="70918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Prepaid_Triple_leg_WLK_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:58:48Z" name="tearDown" finished-at="2024-03-17T16:58:48Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:58:48Z" name="setUp" finished-at="2024-03-17T16:58:51Z" duration-ms="2595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Postpaid_DGR_First_Leg_flow()[pri:16, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:58:51Z" name="A2A_Postpaid_DGR_First_Leg_flow" finished-at="2024-03-17T16:59:38Z" duration-ms="46774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Postpaid_DGR_First_Leg_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:59:38Z" name="tearDown" finished-at="2024-03-17T16:59:38Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:59:38Z" name="setUp" finished-at="2024-03-17T16:59:40Z" duration-ms="2152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2ABooking_Postpaid_Gen_Single_Leg_flow()[pri:17, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T16:59:40Z" name="A2ABooking_Postpaid_Gen_Single_Leg_flow" finished-at="2024-03-17T17:00:24Z" duration-ms="43916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2ABooking_Postpaid_Gen_Single_Leg_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:00:24Z" name="tearDown" finished-at="2024-03-17T17:00:24Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:00:24Z" name="setUp" finished-at="2024-03-17T17:00:26Z" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2ABooking_PostPaid_Po_Mail_S_Single_Leg_flow()[pri:18, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:00:26Z" name="A2ABooking_PostPaid_Po_Mail_S_Single_Leg_flow" finished-at="2024-03-17T17:01:10Z" duration-ms="44120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2ABooking_PostPaid_Po_Mail_S_Single_Leg_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:01:10Z" name="tearDown" finished-at="2024-03-17T17:01:10Z" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:01:10Z" name="setUp" finished-at="2024-03-17T17:01:12Z" duration-ms="1913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2ABooking_Postpaid_Walking_Single_Leg_flow()[pri:19, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:01:12Z" name="A2ABooking_Postpaid_Walking_Single_Leg_flow" finished-at="2024-03-17T17:02:06Z" duration-ms="53339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2ABooking_Postpaid_Walking_Single_Leg_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:02:06Z" name="tearDown" finished-at="2024-03-17T17:02:06Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:02:06Z" name="setUp" finished-at="2024-03-17T17:02:08Z" duration-ms="1770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2ABooking_PostPaid_Double_leg_Gen_flow()[pri:20, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:02:08Z" name="A2ABooking_PostPaid_Double_leg_Gen_flow" finished-at="2024-03-17T17:03:00Z" duration-ms="52757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2ABooking_PostPaid_Double_leg_Gen_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:03:00Z" name="tearDown" finished-at="2024-03-17T17:03:01Z" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:03:01Z" name="setUp" finished-at="2024-03-17T17:03:03Z" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Postpaid_Duble_leg_PoMail_flow()[pri:21, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:03:03Z" name="A2A_Postpaid_Duble_leg_PoMail_flow" finished-at="2024-03-17T17:03:55Z" duration-ms="52750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Postpaid_Duble_leg_PoMail_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:03:55Z" name="tearDown" finished-at="2024-03-17T17:03:55Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:03:55Z" name="setUp" finished-at="2024-03-17T17:03:57Z" duration-ms="1987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Postpaid_Duble_leg_Walking_flow()[pri:22, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:03:57Z" name="A2A_Postpaid_Duble_leg_Walking_flow" finished-at="2024-03-17T17:05:01Z" duration-ms="63361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Postpaid_Duble_leg_Walking_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:05:01Z" name="tearDown" finished-at="2024-03-17T17:05:01Z" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:05:01Z" name="setUp" finished-at="2024-03-17T17:05:03Z" duration-ms="1842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Postpaid_Triple_leg_Gen_flow()[pri:23, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:05:03Z" name="A2A_Postpaid_Triple_leg_Gen_flow" finished-at="2024-03-17T17:06:04Z" duration-ms="60792" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEVENDRAS-13039', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DEVEND~1.SIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f74a9f9537fffc48e0e3666458d9384]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DEVENDRAS-13039', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DEVEND~1.SIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f74a9f9537fffc48e0e3666458d9384
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:428)
+	at com.crm.qa.testcases.A2A_BookingPageTest.A2A_Postpaid_Triple_leg_Gen_flow(A2A_BookingPageTest.java:4761)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Postpaid_Triple_leg_Gen_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:06:05Z" name="tearDown" finished-at="2024-03-17T17:06:05Z" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:06:05Z" name="setUp" finished-at="2024-03-17T17:06:07Z" duration-ms="2195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="A2A_Postpaid_Triple_leg_POMail_flow()[pri:24, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:06:07Z" name="A2A_Postpaid_Triple_leg_POMail_flow" finished-at="2024-03-17T17:07:11Z" duration-ms="63646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A2A_Postpaid_Triple_leg_POMail_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:07:11Z" name="tearDown" finished-at="2024-03-17T17:07:11Z" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:07:11Z" name="setUp" finished-at="2024-03-17T17:07:13Z" duration-ms="1783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="D2D_Postpaid_Triple_leg_WLK_flow()[pri:25, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:07:13Z" name="D2D_Postpaid_Triple_leg_WLK_flow" finished-at="2024-03-17T17:08:24Z" duration-ms="71343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D2D_Postpaid_Triple_leg_WLK_flow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.A2A_BookingPageTest@6239aba6]" started-at="2024-03-17T17:08:24Z" name="tearDown" finished-at="2024-03-17T17:08:24Z" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.A2A_BookingPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
