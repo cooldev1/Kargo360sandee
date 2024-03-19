@@ -80,7 +80,7 @@ public class TestBase {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	try {
 		String currentDir = System.getProperty("user.dir");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/"+testMethodName+ System.currentTimeMillis() + ".png"));
 	}catch(IOException e) {
 		e.printStackTrace();

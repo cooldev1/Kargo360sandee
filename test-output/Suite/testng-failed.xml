@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.A2A_BookingPageTest">
+        <methods>
+          <include name="A2A_Postpaid_Duble_leg_Walking_flow"/>
+          <include name="A2A_Prepaid_Double_leg_Gen_flow"/>
+          <include name="A2A_Prepaid_Double_leg_PoMail_flow"/>
+          <include name="A2A_Postpaid_Duble_leg_PoMail_flow"/>
+          <include name="D2D_Postpaid_Triple_leg_WLK_flow"/>
+          <include name="A2ABooking_PostPaid_Double_leg_Gen_flow"/>
+          <include name="setUp"/>
+          <include name="A2ABooking_Postpaid_Walking_Single_Leg_flow"/>
+          <include name="A2A_Prepaid_Triple_leg_WLK_flow"/>
+          <include name="A2A_Prepaid_Triple_leg_Gen_flow"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.A2A_BookingPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

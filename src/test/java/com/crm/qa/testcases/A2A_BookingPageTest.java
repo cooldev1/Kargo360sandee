@@ -3776,7 +3776,7 @@ public class A2A_BookingPageTest  extends TestBase {
 				//	driver.findElement(By.xpath("//table[@class='table datatable-basic dataTable datatable-scroll no-footer route_dv']//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys("sg",Keys.ARROW_UP);
 				//	Thread.sleep(2000);
 				//	driver.findElement(By.xpath("//table[@class='table datatable-basic dataTable datatable-scroll no-footer route_dv']//child::tbody//child::tr[1]//child::td[9]//select")).sendKeys(Keys.ARROW_DOWN);
-					driver.findElement(By.xpath("//*[contains(@class,'table datatable-basic dataTable datatable-scroll no-footer route_dv')]//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys(Keys.PAGE_DOWN);
+					driver.findElement(By.xpath("//*[contains(@class,'table datatable-basic dataTable datatable-scroll no-footer route_dv')]//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys(Keys.ARROW_DOWN);
 					Thread.sleep(2000);
 					
 		
@@ -4041,7 +4041,7 @@ public class A2A_BookingPageTest  extends TestBase {
 				//	driver.findElement(By.xpath("//table[@class='table datatable-basic dataTable datatable-scroll no-footer route_dv']//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys("sg",Keys.ARROW_UP);
 				//	Thread.sleep(2000);
 				//	driver.findElement(By.xpath("//table[@class='table datatable-basic dataTable datatable-scroll no-footer route_dv']//child::tbody//child::tr[1]//child::td[9]//select")).sendKeys(Keys.ARROW_DOWN);
-					driver.findElement(By.xpath("//*[contains(@class,'table datatable-basic dataTable datatable-scroll no-footer route_dv')]//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys(Keys.PAGE_DOWN);
+					driver.findElement(By.xpath("//*[contains(@class,'table datatable-basic dataTable datatable-scroll no-footer route_dv')]//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys(Keys.ARROW_DOWN);
 					Thread.sleep(2000);
 					
 		
@@ -4306,7 +4306,7 @@ public class A2A_BookingPageTest  extends TestBase {
 				//	driver.findElement(By.xpath("//table[@class='table datatable-basic dataTable datatable-scroll no-footer route_dv']//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys("sg",Keys.ARROW_UP);
 				//	Thread.sleep(2000);
 				//	driver.findElement(By.xpath("//table[@class='table datatable-basic dataTable datatable-scroll no-footer route_dv']//child::tbody//child::tr[1]//child::td[9]//select")).sendKeys(Keys.ARROW_DOWN);
-					driver.findElement(By.xpath("//*[contains(@class,'table datatable-basic dataTable datatable-scroll no-footer route_dv')]//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys(Keys.PAGE_DOWN);
+					driver.findElement(By.xpath("//*[contains(@class,'table datatable-basic dataTable datatable-scroll no-footer route_dv')]//child::tbody//child::tr[1]//child::td[7]//select")).sendKeys(Keys.ARROW_DOWN);
 					Thread.sleep(2000);
 					
 		
