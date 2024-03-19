@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.A2A_BookingPageTest">
+      <class name="com.crm.qa.testcases.international_BookingPageTest">
         <methods>
-          <include name="A2ABooking_Walking_One_Lag_flow"/>
           <include name="setUp"/>
-          <include name="A2A_Postpaid_Triple_leg_Gen_flow"/>
-          <include name="tearDown"/>
+          <include name="international_Booking_Export_Single_leg_AVI_flow"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.A2A_BookingPageTest -->
+      </class> <!-- com.crm.qa.testcases.international_BookingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
